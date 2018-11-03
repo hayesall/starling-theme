@@ -31,7 +31,7 @@ from setuptools import setup
 from starling_theme import __version__
 
 HERE = path.abspath(path.dirname(__file__))
-with open_(path.join(HERE, "README.rst", encoding="utf-8")) as f:
+with open_(path.join(HERE, "README.rst"), encoding="utf-8") as f:
     LONG_DESCRIPTION = f.read()
 
 setup(
