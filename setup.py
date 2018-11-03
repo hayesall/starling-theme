@@ -21,25 +21,38 @@
 # SOFTWARE.
 
 """
-==============
-starling_theme
-==============
-
-A Sphinx documentation theme for projects in the StARLinG Lab.
-
-``pip install starling_theme``
+``setup.py`` for ``starling_theme``
 """
 
+from codecs import open as open_
 from os import path
+from setuptools import setup
 
+from starling_theme import __version__
 
-__version__ = "0.0.1"
+HERE = path.abspath(path.dirname(__file__))
+with open_(path.join(HERE, "README.rst", encoding="utf-8")) as f:
+    LONG_DESCRIPTION = f.read()
 
-
-def setup(app):
-    r"""
-    Setup script for the ``starling_theme``. See the entry in the
-    `sphinx documentation <http://www.sphinx-doc.org/en/master/theming.html>`_
-    for creating themes.
-    """
-    app.get_html_theme("starling_theme", path.abspath(path.dirname(__file__)))
+setup(
+    name="starling_theme",
+    version=__version__,
+    license="MIT",
+    author="Alexander L. Hayes",
+    author_email="alexander@batflyer.net",
+    url="https://github.com/batflyer/",
+    description="Sphinx Theme for the StARLinG Lab.",
+    long_description=LONG_DESCRIPTION,
+    packages=["starling_theme"],
+    package_data={"starling_theme": ["theme.conf", "*.html", "static/css/*.css"]},
+    include_package_data=True,
+    entry_points={"sphinx.html_themes": ["starling_theme = starling_theme"]},
+    install_requires=["sphinx"],
+    classifiers=[
+        "Framework :: Sphinx",
+        "Framework :: Sphinx :: Theme",
+        "License :: OSI Approved :: MIT License",
+        "Programming Language :: Python :: 3.6",
+        "Topic :: Documentation",
+    ],
+)
