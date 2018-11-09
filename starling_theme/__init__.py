@@ -42,4 +42,4 @@ def setup(app):
     `sphinx documentation <http://www.sphinx-doc.org/en/master/theming.html>`_
     for creating themes.
     """
-    app.get_html_theme("starling_theme", path.abspath(path.dirname(__file__)))
+    app.add_html_theme("starling_theme", path.abspath(path.dirname(__file__)))

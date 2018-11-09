@@ -1,0 +1,67 @@
+{% if (theme_prev_next_buttons_location == 'bottom' or theme_prev_next_buttons_location == 'both') and (next or prev) %}
+<nav class="navigation">
+  <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+    {% if prev %}
+      <a class="pagination--pager" href="{{ prev.link|e }}" class="btn btn-neutral" title="{{ prev.title|striptags|e }}" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> {{ _('Previous') }}</a>
+    {% else %}
+      <a class="pagination--pager disabled" href="#"> Previous </a>
+    {% endif %}
+    {% if next %}
+      <a class="pagination--pager" href="{{ next.link|e }}" class="btn btn-neutral float-right" title="{{ next.title|striptags|e }}" accesskey="n" rel="next">{{ _('Next') }} <span class="fa fa-arrow-circle-right"></span></a>
+    {% else %}
+      <a class="pagination--pager disabled" href="#"> Next </a>
+    {% endif %}
+  </div>
+  </nav>
+{% endif %}
+<br />
+
+<div class="page__footer">
+  <footer>
+    <div role="contentinfo">
+      <p>
+      {%- if show_copyright %}
+        {%- if hasdoc('copyright') %}
+          {% trans path=pathto('copyright'), copyright=copyright|e %}&copy; <a href="{{ path }}">Copyright</a> {{ copyright }}{% endtrans %}
+        {%- else %}
+          {% trans copyright=copyright|e %}&copy; Copyright {{ copyright }}{% endtrans %}
+        {%- endif %}
+      {%- endif %}
+
+      {%- if build_id and build_url %}
+        {% trans build_url=build_url, build_id=build_id %}
+          <span class="build">
+            Build
+            <a href="{{ build_url }}">{{ build_id }}</a>.
+          </span>
+        {% endtrans %}
+      {%- elif commit %}
+        {% trans commit=commit %}
+          <span class="commit">
+            Revision <code>{{ commit }}</code>.
+          </span>
+        {% endtrans %}
+      {%- elif last_updated %}
+        {% trans last_updated=last_updated|e %}Last updated on {{ last_updated }}.{% endtrans %}
+      {%- endif %}
+      </p>
+    </div>
+
+    {%- if show_sphinx %}
+    {% trans %}Documentation built with <a href="http://sphinx-doc.org/">Sphinx</a>, <a href="https://github.com/starling-lab/sphinx_starling_theme">StARLinG Sphinx Theme</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/">Minimal Mistakes</a>{% endtrans %}.
+    {%- endif %}
+
+    {%- block extrafooter %} {% endblock %}
+
+    <div class="page__footer-follow">
+      <ul class="social-icons">
+        <br /><li><strong>Follow StARLinG Lab:</strong></li><br />
+        <li><a href="https://github.com/starling-lab"><i class="fab fa-fw fa-github-square" aria-hidden="true"></i> GitHub</a></li>
+        <li><a href="https://twitter.com/starling_lab"><i class="fab fa-fw fa-twitter-square" aria-hidden="true"></i> Twitter</a></li>
+        <li><a href="https://www.youtube.com/channel/UCg9c1HGFp2_CrItex_KLhSg"><i class="fab fa-fw fa-youtube-square" aria-hidden="true"></i> YouTube</a></li>
+        <li><a href="https://starling.utdallas.edu/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+      </ul>
+    </div>
+    <div class="page__footer-copyright">&copy; 2018 StARLinG Lab. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+  </footer>
+</div>

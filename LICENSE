@@ -1,6 +1,76 @@
+======================
+StARLinG Theme License
+======================
+
+This software makes substantial use of other software packages under the terms
+of the MIT License. As such, this software is also distributed under the terms
+of an MIT License, and the licenses of other projects are copied here as well.
+
 MIT License
 
 Copyright (c) 2018 Alexander L. Hayes
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+---
+
+sphinx_rtd_theme
+----------------
+
+`sphinx_rtd_theme <https://github.com/rtfd/sphinx_rtd_theme>`_ is an open-
+source theme for Sphinx distributed under the terms of the MIT License.
+The full license (as of Friday, November 9, 2018) is copied (in full) below:
+
+The MIT License (MIT)
+
+Copyright (c) 2013-2018 Dave Snider, Read the Docs, Inc. & contributors
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of
+this software and associated documentation files (the "Software"), to deal in
+the Software without restriction, including without limitation the rights to
+use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of
+the Software, and to permit persons to whom the Software is furnished to do so,
+subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS
+FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
+COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
+IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
+CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+---
+
+Minimal Mistakes Jekyll Theme
+-----------------------------
+
+`Minimal Mistakes Jekyll Theme <https://github.com/mmistakes/minimal-mistakes>`_
+is an open-source Jekyll Theme for generating static sites and distributed
+under the terms of the MIT License. The full license (as of Friday, November 9,
+2018) is copied (in full) below:
+
+The MIT License (MIT)
+
+Copyright (c) 2013-2018 Michael Rose and contributors
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
