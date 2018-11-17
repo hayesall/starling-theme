@@ -3,10 +3,15 @@
 
 /* starling_theme | MIT License */
 
-div.highlight {
-  border-image-repeat: stretch stretch;
-  background-clip: border-box;
-  font-size: 14px;
+/* Menu and Main Navigation for StARLinG Links */
+
+div.masthead {
+  font-size: 22px;
+  line-height: 1.5;
+}
+
+li.masthead__menu-item {
+  box-sizing: border-box;
 }
 
 pre {
@@ -14,6 +19,67 @@ pre {
   padding-top: 12px;
   padding-left: 12px;
   padding-right: 12px;
+}
+
+/* Breadcrumb navigation */
+.wy-breadcrumbs li {
+  font-size: 22px;
+  display: inline-block;
+}
+
+.wy-breadcrumbs li.wy-breadcrumbs-aside {
+  float: right;
+  font-size: 80%;
+}
+
+.wy-breadcrumbs a:link, .wy-breadcrumbs a:visited {
+  text-decoration: none;
+}
+
+/* Table of Contents */
+
+.toctree-wrapper p.caption {
+  font-size: 110%;
+}
+
+.wy-plain-list-disc, .toctree-wraper ul {
+  list-style: disc;
+  line-height: 24px;
+  margin-bottom: 24px;
+}
+
+.toctree-l1 {
+  font-size: 110%;
+  padding-left: 10px;
+}
+
+.toctree-l2 {
+  font-size: 90%;
+  padding-left: 20px;
+}
+
+.toctree-l3 {
+  font-size: 90%;
+  padding-left: 30px;
+}
+
+.toctree-l4 {
+  padding-left: 40px;
+}
+
+/* Permalinks (needs some additional work to get them showing up at the right time) */
+
+.headerlink {
+  visibility: hidden;
+  font-size: 14px;
+}
+
+/* Code */
+
+div.highlight {
+  border-image-repeat: stretch stretch;
+  background-clip: border-box;
+  font-size: 14px;
 }
 
 dt {
