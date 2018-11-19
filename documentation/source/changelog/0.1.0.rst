@@ -1,0 +1,23 @@
+========================
+0.1.0: Static Navigation
+========================
+
+* Table of Contents:
+
+  * ``layout.html`` and ``theme.css`` adjusted to create a static Table of Contents that follows along the left side of the page as the user scrolls down.
+  * This collapses into a drop-down menu in mobile view.
+
+* ``theme.conf``:
+
+  * includehidden = True
+  * navigation_depth = 4
+
+* Search:
+
+  * Search bar is currently placed at the top of the screen.
+  * Default text replaced with "Search project documentation" to help prevent it being mixed up with site-wide search.
+
+* Documentation:
+
+  * ``conf.py`` imports version information directly from ``starling_theme.__init__``
+  * ``index.rst`` set to have hidden table of contents (now that the actual Table of Contents is resolved).

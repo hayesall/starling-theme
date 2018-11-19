@@ -24,6 +24,14 @@ A mobile-friendly Sphinx theme based on the design of the StARLinG Lab's website
   :caption: Developer Guide
 
   developer_guide/index
+  changelog/index
+
+.. toctree::
+  :hidden:
+  :caption: Links
+
+  GitHub <https://github.com/batflyer/starling_theme/>
+  PyPi <https://pypi.org/project/starling-theme/>
 
 Quick-start
 -----------
@@ -40,7 +48,7 @@ Stable versions are hosted on `PyPi <https://pypi.org/project/starling-theme/>`_
   >>> import starling_theme
   >>> print(starling_theme.__version__)
 
-The ``html_theme`` in your Sphinx ``conf.py`` can then be set to use this theme. If the theme was generated using ``sphinx_quickstart``, some of the options specific to alabaster may also need to be adjusted.
+The ``html_theme`` in your Sphinx ``conf.py`` can then be set to use this theme.
 
 .. code-block:: diff
 
@@ -55,20 +63,6 @@ The ``html_theme`` in your Sphinx ``conf.py`` can then be set to use this theme.
     #
   + html_theme = 'starling_theme'
   - html_theme = 'alabaster'
-
-    # This is required for the alabaster theme
-    # refs: http://alabaster.readthedocs.io/en/latest/installation.html#sidebars
-
-  - html_sidebars = {
-  -       '**': [
-  -           'about.html',
-  -           'navigation.html',
-  -           'relations.html',  # needs 'show_related': True theme option to display
-  -           'searchbox.html',
-  -           'donate.html',
-  -       ]
-  - }
-
 
 
 License

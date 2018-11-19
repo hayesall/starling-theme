@@ -1,0 +1,14 @@
+=================================================
+0.0.2: Navigation Updates and Early Documentation
+=================================================
+
+* Navigation:
+
+  * Header menu: Added the magnifying glass symbol back (by updating layout.html).
+  * ``search.html`` and ``searchbox.html`` added for searching the documentation.
+  * ``theme.css``: Breadcrumb navigation and table-of-contents entries are now displayed properly.
+
+* Documentation:
+
+  * ``index.rst`` contains an Overview, Quick-start(Installation/adjusting ``conf.py``), and a License Blurb.
+  * Filler pages for User Guide and Developer Guide.

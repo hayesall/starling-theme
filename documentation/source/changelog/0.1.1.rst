@@ -1,0 +1,26 @@
+=====================================
+0.1.1: CSS Bugfixes and Documentation
+=====================================
+
+TL;DR: This fixes a bug in the ``theme.css``, removes some text which was previously commented out, and adds documentation to this documentation.
+
+``theme.css``:
+
+* Some of the .css was originally brought over from the ``sphinx_rtd_theme``, but was commented out in ``0.1.0``. This has been removed.
+* The Table of Contents along the left of the screen (which scrolls with the user) had a bug where the ``.current`` class was set to use ``font-weight: 900``. In reality this should have been ``a.current``, and has now been corrected in order to only bolden the current page's link.
+
+General Documentation changes:
+
+* Changelog is now part of the documentation, and is stored under: ``documentation/changelog/``.
+* New ``.. toctree::`` for the main ``index.rst`` containing links to other relevant pages (in this case the GitHub and PyPi pages).
+* ``source/index.rst``: Removed the part of the guide which suggested deleting the ``html_sidebars`` dictionary from ``conf.py``. This variable is necessary for the alabaster theme but it does not effect ``starling-theme``; so including directions to remove it was unecessary.
+
+User Guide:
+
+* Guides on environment setup and downloading contain discussion on how to get started from a user's perspective.
+* An example for using ``sphinx-quickstart`` and switching out the ``conf.py`` variables to use ``starling-theme`` are now included.
+
+Developer Guide:
+
+* **Development Environment**: Contains discussion on creating an Anaconda environment for developing the theme.
+* **Cloning from GitHub...**: Contains discussion on cloning the repository from GitHub and installing a development build using ``setup.py``.

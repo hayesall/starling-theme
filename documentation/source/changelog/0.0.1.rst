@@ -1,0 +1,14 @@
+======================
+0.0.1: Initial Release
+======================
+
+* Theme can now be used as a Sphinx ``html_theme``.
+* Added footer, layout, breadcrumbs, and theme configuration.
+* ``css/js`` included in the static folder.
+* README and LICENSE updated for current state of project.
+* Adding repository basics for Python project:
+
+  * ``README.rst``, ``.gitignore``, ``LICENSE``
+  * ``documentation/`` directory with ``sphinx-quickstart`` documents.
+  * ``starling_theme`` package with ``__init__`` and static directory.
+  * ``setup.py`` and ``setup.cfg``
