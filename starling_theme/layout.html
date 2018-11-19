@@ -79,10 +79,9 @@
 
   {# Keep modernizr in head - http://modernizr.com/docs/#installing #}
   <script src="{{ pathto('_static/js/modernizr.min.js', 1) }}"></script>
-
 </head>
 
-<body class="wy-body-for-nav">
+<body class="layout--single wide">
 
   <!-- Load in the header from starling.utdallas.edu -->
   <div class="masthead">
@@ -122,12 +121,10 @@
         </nav>
       </div>
     </div>
-  </div>
-  <!-- End header for starling.utdallas.edu -->
-
-
+  </div><!-- </div class="masthead"> -->
 
   {% block extrabody %} {% endblock %}
+  <!--
   <div class="wy-grid-for-nav">
 
     {# SIDE NAV, TOGGLES ON MOBILE #}
@@ -176,7 +173,6 @@
             {% if global_toc %}
               {{ global_toc }}
             {% else %}
-              <!-- Local TOC -->
               <div class="local-toc">{{ toc }}</div>
             {% endif %}
           {% endblock %}
@@ -194,38 +190,59 @@
         {% endblock %}
       </nav>
 
+      -->
 
-      <!--
-      <div class="wy-nav-content">
-        -->
-      <div id="main">
-      {%- block content %}
+    <div class="initial-content">
+      <div id="main" role="main">
 
-        <div class="page__inner-wrap">
+        {% include "searchbox.html" %}
 
-          {% include "breadcrumbs.html" %}
 
-          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+        <!-- Sticky Sidebar Navigation -->
+        <div class="sidebar sticky">
+          <nav class="nav__list">
+            <input id="ac-toc" name="accordion-toc" type="checkbox" />
+            <label for="ac-toc">Toggle Menu</label>
+            <ul class="nav__items">
+              <li>
+                  <h2>
+                  <a href="{{ pathto(master_doc) }}" class="icon icon-home" style="display: inline;"> {{ project }} {% if version %}({{ version }}){% endif %}</a>
+                  </h2>
 
-          {%- block document %}
-           <div itemprop="articleBody">
-            {% block body %}{% endblock %}
-           </div>
-           {% if self.comments()|trim %}
-           <div class="articleComments">
-            {% block comments %}{% endblock %}
-           </div>
-           {% endif%}
-          </div>
-          {%- endblock %}
-        </div>
-      {%- endblock %}
-      </div>
-      <br />
+              </li>
+              <li>
+                {% set global_toc = toctree(maxdepth=theme_navigation_depth|int,
+                                            collapse=theme_collapse_navigation|tobool,
+                                            includehidden=theme_includehidden|tobool,
+                                            titles_only=theme_titles_only|tobool) %}
+                {{ global_toc }}
+              </li>
+            </ul><!-- </ul class="nav__items"> -->
+          </nav><!-- </nav class="nav__list"> -->
+        </div><!-- </div class="sidebar sticky"> -->
 
-    </section>
+        {%- block content %}
 
-  </div>
+        <!-- These will need to be adjusted. -->
+        <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
+          <meta itemprop="headline" content="BoostSRL Wiki">
+          <meta itemprop="description" content="BoostSRL Wiki Homepage">
+
+          <div class="page__inner-wrap">
+            <section class="page__content" itemprop="text">
+            {% include "breadcrumbs.html" %}
+            {%- block document %}
+               <div itemprop="articleBody">
+                {% block body %}{% endblock %}
+               </div>
+            {%- endblock %}
+            </section><!-- <section class="page__content"> -->
+          </div><!-- </div class="page__inner-wrap"> -->
+        {%- endblock %}
+        </article>
+    </div><!-- </div id="main" role="main"> -->
+  </div><!-- </div class="initial-content"> -->
+
   {% include "footer.html" %}
 
   {% if not embedded %}

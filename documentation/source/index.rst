@@ -3,17 +3,26 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Overview
---------
+==============
+starling-theme
+==============
 
 ``starling-theme``: A Sphinx theme for `StARLinG Lab <https://starling.utdallas.edu>`_ documentation.
 
 A mobile-friendly Sphinx theme based on the design of the StARLinG Lab's website, as well as `sphinx_rtd_theme <https://pypi.org/project/sphinx_rtd_theme/>`_ and the `Minimal Mistakes Jekyll Theme <https://github.com/mmistakes/minimal-mistakes>`_.
 
 .. toctree::
-  :maxdepth: 3
+  :hidden:
+  :glob:
+  :caption: User Guide
 
   user_guide/index
+
+.. toctree::
+  :hidden:
+  :glob:
+  :caption: Developer Guide
+
   developer_guide/index
 
 Quick-start
