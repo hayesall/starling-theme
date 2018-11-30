@@ -101,7 +101,17 @@ section.page__content ul {
   font-size: 14px;
 }
 
-/* Code */
+/* Code
+
+222,235,247
+189,215,238
+46,117,182
+31,78,121
+0,51,102
+38,38,38
+13,13,13
+
+*/
 
 div.highlight {
   border-image-repeat: stretch stretch;
@@ -120,7 +130,8 @@ pre {
 dt {
   background-attachment: sroll;
   background-clip: border-box;
-  background-color: rgb(231, 242, 250);
+  // background-color: rgb(231, 242, 250);
+  background-color: rgb(222, 235, 247);
   background-origin: padding-box;
 
   background-position: 0% 0%;
