@@ -4,36 +4,34 @@ StARLinG Sphinx Theme
 
 A Sphinx Theme for `StARLinG Lab <https://starling.utdallas.edu>`_ Documentation.
 
+There are already a lot of tools that support writing and building documentation with Sphinx. This component makes it easy to generate ``.html`` pages that meld seamlessly with `StARLinG's Webpage <https://github.com/starling-lab/starling.utdallas.edu>`_.
+
+.. image:: documentation/source/_static/starling_theme_screenshot_0.1.1.png
+
 Installation & Getting Started
 ------------------------------
 
 1. Clone the repository
 
-  .. code-block:: bash
+.. code-block:: bash
 
-    $ git clone git@github.com:batflyer/starling_theme.git
-    $ python setup.py develop
+  $ git clone git@github.com:batflyer/starling_theme.git
+  $ python setup.py develop
 
 2. This repository uses itself as a theme. Build the documentation with Sphinx and open it with a browser.
 
-  .. code-block:: bash
+.. code-block:: bash
 
-    $ cd documentation
-    $ make html
-    $ firefox build/html/index.html
+  $ cd documentation
+  $ make html
+  $ firefox build/html/index.html
 
 Project State & Current Goals
 -----------------------------
 
-This repository is in an *Exploratory Phase*. The goal is to create a documentation theme which blends seamlessly with the StARLinG Website, but exactly how this may be achieved is up for debate.
+This repository is in an *Alpha Phase*. The goal is to create a documentation theme which blends seamlessly with the StARLinG Website, but exactly how this may be achieved is up for debate.
 
-**Open Problems:**
-
-* Better navigation (``wy-nav-side`` and ``wy-grid-for-nav`` are currently dumped as links on each page rather than having a navigation menu).
-* Standardize the color scheme (rather than defaulting to ``rtd_sphinx_theme`` colors).
-* Unit tests for building certain page elements.
-* Documentation for building/deploying.
-* [*Maybe*]: Hook into the ``starling-lab/starling.utdallas.edu`` repository to automatically copy portions of the header and footer.
+Open Problems are tracked through the `Issues Page <https://github.com/batflyer/starling_theme/issues/>`_.
 
 License
 -------

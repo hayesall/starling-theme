@@ -1,0 +1,21 @@
+=======================================
+0.1.2: Search Bar Patch & README Update
+=======================================
+
+TL;DR: This is a patch 🔖 for how the search bar is displayed (but actual search functionality is still broken).
+
+Layout Changes 🚧
+
+* Incremental work on fixing the search bar. This resolves the problem with displaying the search bar when the "search icon" is clicked; but there are still some jQuery errors which prevent the search results from actually being returned to the user.
+* Incremental work on updating the color scheme. This adds a block comment to the ``theme.css`` including the color scheme Gautam used in the blue logo.
+
+Dependencies ⬆️
+
+*  Adding ``starling_theme`` and ``sphinx`` to a ``requirements.txt`` file in the documentation directory. This is mainly to make it explicit that both need to be installed before the documentation is built, and because some documentation build services default to checking ``requirements.txt``.
+
+README Updates 📝
+
+* Adding image of the built documentation index to help illustrate what this package actually does. Added to README.
+* Fixing some indentation problems with the code blocks.
+* Setting the project state to "alpha".
+* Current goals and open problems now lists a link to the project issues page.

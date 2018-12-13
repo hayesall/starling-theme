@@ -49,6 +49,7 @@ setup(
     entry_points={"sphinx.html_themes": ["starling_theme = starling_theme"]},
     install_requires=["sphinx"],
     classifiers=[
+        'Development Status :: 3 - Alpha',
         "Framework :: Sphinx",
         "Framework :: Sphinx :: Theme",
         "License :: OSI Approved :: MIT License",
