@@ -6,7 +6,11 @@ A Sphinx Theme for `StARLinG Lab <https://starling.utdallas.edu>`_ Documentation
 
 There are already a lot of tools that support writing and building documentation with Sphinx. This component makes it easy to generate ``.html`` pages that meld seamlessly with `StARLinG's Webpage <https://github.com/starling-lab/starling.utdallas.edu>`_.
 
-.. image:: documentation/source/_static/starling_theme_screenshot_0.1.1.png
+.. raw:: html
+
+  <p align="center">
+    <img src="https://raw.githubusercontent.com/starling-lab/starling-theme/master/documentation/source/_static/starling_theme_screenshot_0.1.1.png" width="50%" />
+  </p>
 
 Installation & Getting Started
 ------------------------------
@@ -15,7 +19,7 @@ Installation & Getting Started
 
 .. code-block:: bash
 
-  $ git clone git@github.com:batflyer/starling_theme.git
+  $ git clone git@github.com:starling-lab/starling-theme.git
   $ python setup.py develop
 
 2. This repository uses itself as a theme. Build the documentation with Sphinx and open it with a browser.
@@ -31,7 +35,7 @@ Project State & Current Goals
 
 This repository is in an *Alpha Phase*. The goal is to create a documentation theme which blends seamlessly with the StARLinG Website, but exactly how this may be achieved is up for debate.
 
-Open Problems are tracked through the `Issues Page <https://github.com/batflyer/starling_theme/issues/>`_.
+Open Problems are tracked through the `Issues Page <https://github.com/starling-lab/starling-theme/issues/>`_.
 
 License
 -------

@@ -30,7 +30,7 @@ A mobile-friendly Sphinx theme based on the design of the StARLinG Lab's website
   :hidden:
   :caption: Links
 
-  GitHub <https://github.com/batflyer/starling_theme/>
+  GitHub <https://github.com/starling-theme/starling-theme/>
   PyPi <https://pypi.org/project/starling-theme/>
 
 Quick-start

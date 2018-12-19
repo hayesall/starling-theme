@@ -40,12 +40,12 @@ Clone the repository and check out the development branch:
 
 .. code-block:: bash
 
-  git clone git@github.com:starling-lab/starling_theme.git
+  git clone git@github.com:starling-lab/starling-theme.git
   git checkout development
 
 Change directory to the base of the repository and run ``setup.py`` to add the development theme.
 
 .. code-block:: bash
 
-  cd starling_theme
+  cd starling-theme
   python setup.py develop

@@ -40,7 +40,7 @@ setup(
     license="MIT",
     author="Alexander L. Hayes",
     author_email="alexander@batflyer.net",
-    url="https://github.com/batflyer/",
+    url="https://github.com/starling-lab/starling-theme/",
     description="Sphinx Theme for the StARLinG Lab.",
     long_description=LONG_DESCRIPTION,
     packages=["starling_theme"],

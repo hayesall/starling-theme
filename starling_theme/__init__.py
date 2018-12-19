@@ -33,7 +33,7 @@ A Sphinx documentation theme for projects in the StARLinG Lab.
 from os import path
 
 
-__version__ = "0.1.2"
+__version__ = "0.1.3"
 
 
 def setup(app):

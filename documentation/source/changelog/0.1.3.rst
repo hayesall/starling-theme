@@ -1,0 +1,15 @@
+===============================
+0.1.3: Transfer to starling-lab
+===============================
+
+TL;DR: ✏️ Transferring repository from ``batflyer/starling_theme`` to ``starling-lab/starling-theme``.
+
+This patch is being applied to finalize the move from ``github.com/batflyer/starling_theme`` to ``github.com/starling-theme``. The rename is done to ensure that names are consistent between the package hosted on PyPi and the name associated with the GitHub repository.
+
+Since the imported package uses underscores (in accordance with Python's syntax requirements), the source folders will still use the ``starling_theme`` convention.
+
+This mainly affects the ``setup.py`` script, with minor tweaks to hyperlinks and directions in the associated documentation (specifically the ``README.rst``, ``documentation/source/developer_guide/01_development_environment.rst``, ``documentation/source/index.rst``).
+
+---
+
+Updated: Wednesday, December 19, 2018
