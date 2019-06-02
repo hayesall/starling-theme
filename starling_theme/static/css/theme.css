@@ -64,6 +64,11 @@ li.masthead__menu-item {
 }
 
 /* Breadcrumb navigation */
+
+.wy-breadcrumbs{
+  padding-left: 0;
+}
+
 .wy-breadcrumbs li {
   font-size: 22px;
   display: inline-block;
