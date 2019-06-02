@@ -1,0 +1,8 @@
+0.1.4: CSS Updates 
+==================
+Updated by Harsha Kokel
+
+Layout Changes 🚧
+
+* Removing left padding from breadcrumb in ``theme.css`` to align it with the rest of the page. 
+
